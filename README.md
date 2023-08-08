@@ -22,3 +22,6 @@ The way I've set my app up is in Eclipse I run it and then I can just type a num
 This allows keeping the app running so the counter values are constantly sent to signoz.  
 To stop the app, I type "exit" and hit enter.  
 
+
+The clickhouse query I am running to see my metric is the following:  
+`select fingerprint, metric_name, fromUnixTimestamp64Milli(toInt64(timestamp_ms)), timestamp_ms, value from signoz_metrics.distributed_samples_v2 where metric_name = 'java_counter_9'`
