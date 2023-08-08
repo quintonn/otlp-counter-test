@@ -1,4 +1,5 @@
-This app is to demonstrate working with Counters with Signoz.
+This app is to demonstrate working with Counters with Signoz.  
+Related to this issue: https://github.com/SigNoz/signoz/issues/3240  
 
 I am trying to track counters, but when the app resets, the counter resets.
 
@@ -17,7 +18,7 @@ This what I'm trying:
 
 I have added screenshots and the clickhouse query in the **Notes** folder in the repository linked above.
 
-The way I've set my app up is in Eclipse I run it and then I can just type a number in the console and hit enter and it calls addCounter with that value.
-This allows keeping the app running so the counter values are constantly sent to signoz.
-To stop the app, I type "exit" and hit enter.
+The way I've set my app up is in Eclipse I run it and then I can just type a number in the console and hit enter and it calls addCounter with that value.  
+This allows keeping the app running so the counter values are constantly sent to signoz.  
+To stop the app, I type "exit" and hit enter.  
 
