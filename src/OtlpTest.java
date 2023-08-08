@@ -82,7 +82,7 @@ public class OtlpTest {
 
         this.meterProvider = metricProviderBuilder.build();
         this.meter = this.meterProvider.meterBuilder("my-test").build();
-        this.counter = this.meter.counterBuilder("java_counter_8").setUnit("message").build();
+        this.counter = this.meter.counterBuilder("java_counter_9").setUnit("message").build();
     }
 
     public void addCounter(final long userValue) throws InterruptedException {
